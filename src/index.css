@@ -1,8 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* This file is kept for compatibility but all styles have been moved to custom.css */
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.92) 100%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 20px 60px -25px rgba(15, 23, 42, 0.35);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
 .section-container {
   max-width: 80rem;
   margin: 0 auto;
